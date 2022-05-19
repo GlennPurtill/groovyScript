@@ -1,0 +1,119 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="PerPerson">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="PerPerson">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="personIdExternal" type="xs:string" />
+              <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="currentYear">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element nillable="true" minOccurs="0" maxOccurs="unbounded" name="cust_Buyingholidays">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="cust_requestdate" type="xs:dateTime" />
+                          <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="cust_BuyingholidaysdaysNav">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="PickListValueV2">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="externalCode" type="xs:unsignedByte" />
+                                      <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="PickListV2_effectiveStartDate" type="xs:dateTime" />
+                                      <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="label_defaultValue" type="xs:decimal" />
+                                      <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="PickListV2_id" type="xs:string" />
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="cust_SPercentage" type="xs:unsignedByte" />
+                          <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="lastModifiedDateTime" type="xs:dateTime" />
+                          <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="externalCode" type="xs:string" />
+                          <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="cust_Wpercentage" type="xs:unsignedByte" />
+                          <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="cust_AdminStatus" type="xs:unsignedByte" />
+                          <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="cust_Buyingholidaysdays" type="xs:unsignedByte" />
+                          <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="cust_From" type="xs:dateTime" />
+                          <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="cust_Status_Request" type="xs:unsignedByte" />
+                          <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="cust_Status_RequestNav">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="PickListValueV2">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="label_defaultValue" type="xs:string" />
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="effectiveStartDate" type="xs:dateTime" />
+                          <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="cust_To" type="xs:dateTime" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="nextYear">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element nillable="true" minOccurs="0" maxOccurs="unbounded" name="cust_Buyingholidays">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="cust_requestdate" type="xs:dateTime" />
+                          <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="cust_BuyingholidaysdaysNav">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="PickListValueV2">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="externalCode" type="xs:unsignedByte" />
+                                      <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="PickListV2_effectiveStartDate" type="xs:dateTime" />
+                                      <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="label_defaultValue" type="xs:decimal" />
+                                      <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="PickListV2_id" type="xs:string" />
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="cust_SPercentage" type="xs:unsignedByte" />
+                          <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="lastModifiedDateTime" type="xs:dateTime" />
+                          <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="externalCode" type="xs:string" />
+                          <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="cust_Wpercentage" type="xs:unsignedByte" />
+                          <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="cust_AdminStatus" type="xs:unsignedByte" />
+                          <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="cust_Buyingholidaysdays" type="xs:unsignedByte" />
+                          <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="cust_From" type="xs:dateTime" />
+                          <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="cust_Status_Request" type="xs:unsignedByte" />
+                          <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="cust_Status_RequestNav">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="PickListValueV2">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="label_defaultValue" type="xs:string" />
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="effectiveStartDate" type="xs:dateTime" />
+                          <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="cust_To" type="xs:dateTime" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
